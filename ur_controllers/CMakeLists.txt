@@ -22,6 +22,7 @@ find_package(tf2_geometry_msgs REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(ur_dashboard_msgs REQUIRED)
 find_package(ur_msgs REQUIRED)
+find_package(my_ur_msgs REQUIRED)
 find_package(generate_parameter_library REQUIRED)
 find_package(trajectory_msgs REQUIRED)
 find_package(control_msgs REQUIRED)
@@ -67,10 +68,10 @@ generate_parameter_library(
   src/friction_model_controller_parameters.yaml
 )
 
-generate_parameter_library(
-  gpio_controller_parameters
-  src/gpio_controller_parameters.yaml
-)
+# generate_parameter_library(
+#   gpio_controller_parameters
+#   src/gpio_controller_parameters.yaml
+# )
 
 generate_parameter_library(
   gravity_update_controller_parameters
@@ -109,7 +110,7 @@ add_library(${PROJECT_NAME} SHARED
   src/scaled_joint_trajectory_controller.cpp
   src/speed_scaling_state_broadcaster.cpp
   src/freedrive_mode_controller.cpp
-  src/gpio_controller.cpp
+  # src/gpio_controller.cpp
   src/gravity_update_controller.cpp
   src/passthrough_trajectory_controller.cpp
   src/ur_configuration_controller.cpp)
@@ -121,7 +122,7 @@ target_link_libraries(${PROJECT_NAME}
   tool_contact_controller_parameters
   force_mode_controller_parameters
   friction_model_controller_parameters
-  gpio_controller_parameters
+  # gpio_controller_parameters
   gravity_update_controller_parameters
   speed_scaling_state_broadcaster_parameters
   scaled_joint_trajectory_controller_parameters

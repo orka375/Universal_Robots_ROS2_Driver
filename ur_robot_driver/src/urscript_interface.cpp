@@ -40,13 +40,13 @@
 #include <chrono>
 #include <thread>
 
-#include <ur_msgs/action/send_script.hpp>
+#include <my_ur_msgs/action/send_script.hpp>
 
 #include <rclcpp/rclcpp.hpp>
 #include "rclcpp_action/rclcpp_action.hpp"
 #include <std_msgs/msg/string.hpp>
 
-using SendScript = ur_msgs::action::SendScript;
+using SendScript = my_ur_msgs::action::SendScript;
 
 class URScriptInterface : public rclcpp::Node
 {
