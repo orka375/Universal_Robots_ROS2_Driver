@@ -47,6 +47,7 @@ find_package(tf2_geometry_msgs REQUIRED)
 find_package(ur_client_library REQUIRED)
 find_package(ur_dashboard_msgs REQUIRED)
 find_package(ur_msgs REQUIRED)
+find_package(my_ur_msgs REQUIRED)
 find_package(motion_primitives_controllers REQUIRED)
 find_package(control_msgs REQUIRED)
 
@@ -152,6 +153,7 @@ add_executable(urscript_interface
 target_link_libraries(urscript_interface PUBLIC
   rclcpp::rclcpp
   rclcpp_action::rclcpp_action
+  ${my_ur_msgs_TARGETS}
   ${std_msgs_TARGETS}
   ${ur_msgs_TARGETS}
   rclcpp::rclcpp

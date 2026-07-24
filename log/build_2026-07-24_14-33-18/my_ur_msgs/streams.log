@@ -1,0 +1,24 @@
+[0.014s] Invoking command in '/home/admin/ros_ws/src/eta_robots/Universal_Robots_ROS2_Driver/build/my_ur_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/admin/ros_ws/install/moveit_configs_utils:/home/admin/ros_ws/install/ros2_controllers_test_nodes:/opt/ros/kilted /usr/bin/cmake /home/admin/ros_ws/src/eta_robots/Universal_Robots_ROS2_Driver/my_ur_msgs -DCMAKE_INSTALL_PREFIX=/home/admin/ros_ws/src/eta_robots/Universal_Robots_ROS2_Driver/install/my_ur_msgs
+[0.024s] -- Found ament_cmake: 2.7.5 (/opt/ros/kilted/share/ament_cmake/cmake)
+[0.180s] -- Found rclcpp: 29.5.8 (/opt/ros/kilted/share/rclcpp/cmake)
+[0.193s] -- Found rosidl_generator_c: 4.9.6 (/opt/ros/kilted/share/rosidl_generator_c/cmake)
+[0.199s] -- Found rosidl_generator_cpp: 4.9.6 (/opt/ros/kilted/share/rosidl_generator_cpp/cmake)
+[0.208s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.217s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.274s] -- Found rmw_implementation_cmake: 7.8.2 (/opt/ros/kilted/share/rmw_implementation_cmake/cmake)
+[0.276s] -- Found rmw_fastrtps_cpp: 9.3.4 (/opt/ros/kilted/share/rmw_fastrtps_cpp/cmake)
+[0.300s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.343s] -- Found std_msgs: 5.5.2 (/opt/ros/kilted/share/std_msgs/cmake)
+[0.350s] -- Found geometry_msgs: 5.5.2 (/opt/ros/kilted/share/geometry_msgs/cmake)
+[0.358s] -- Found rosidl_default_generators: 1.7.2 (/opt/ros/kilted/share/rosidl_default_generators/cmake)
+[0.365s] -- Found rosidl_adapter: 4.9.6 (/opt/ros/kilted/share/rosidl_adapter/cmake)
+[0.610s] [31mCMake Error at /opt/ros/kilted/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:223 (message):
+[0.610s]   Packages installing interfaces must include
+[0.611s]   '<member_of_group>rosidl_interface_packages</member_of_group>' in their
+[0.611s]   package.xml
+[0.611s] Call Stack (most recent call first):
+[0.611s]   CMakeLists.txt:19 (rosidl_generate_interfaces)
+[0.611s] 
+[0.611s] [0m
+[0.611s] -- Configuring incomplete, errors occurred!
+[0.617s] Invoked command in '/home/admin/ros_ws/src/eta_robots/Universal_Robots_ROS2_Driver/build/my_ur_msgs' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/admin/ros_ws/install/moveit_configs_utils:/home/admin/ros_ws/install/ros2_controllers_test_nodes:/opt/ros/kilted /usr/bin/cmake /home/admin/ros_ws/src/eta_robots/Universal_Robots_ROS2_Driver/my_ur_msgs -DCMAKE_INSTALL_PREFIX=/home/admin/ros_ws/src/eta_robots/Universal_Robots_ROS2_Driver/install/my_ur_msgs

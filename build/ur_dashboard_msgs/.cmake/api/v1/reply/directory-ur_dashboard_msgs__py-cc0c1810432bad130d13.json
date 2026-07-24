@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "ur_dashboard_msgs__py",
+		"source" : "/home/admin/ros_ws/src/eta_robots/Universal_Robots_ROS2_Driver/build/ur_dashboard_msgs/ur_dashboard_msgs__py"
+	}
+}

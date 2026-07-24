@@ -1236,8 +1236,9 @@ void URPositionHardwareInterface::checkAsyncIO()
       !std::isnan(payload_inertia_[0]) && !std::isnan(payload_inertia_[1]) && !std::isnan(payload_inertia_[2]) &&
       !std::isnan(payload_inertia_[3]) && !std::isnan(payload_inertia_[4]) && !std::isnan(payload_inertia_[5]) &&
       !std::isnan(payload_transition_time_) && ur_driver_ != nullptr) {
-    payload_async_success_ = ur_driver_->setTargetPayload(payload_mass_, payload_center_of_gravity_, payload_inertia_,
-                                                          payload_transition_time_);
+    // payload_async_success_ = ur_driver_->setTargetPayload(payload_mass_, payload_center_of_gravity_, payload_inertia_,
+    //                                                       payload_transition_time_);
+    payload_async_success_ = ur_driver_->setPayload(payload_mass_, payload_center_of_gravity_);                                                      
 
     payload_mass_ = NO_NEW_CMD_;
     payload_center_of_gravity_ = { NO_NEW_CMD_, NO_NEW_CMD_, NO_NEW_CMD_ };

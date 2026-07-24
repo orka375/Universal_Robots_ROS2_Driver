@@ -1,0 +1,8 @@
+[31mCMake Error at /opt/ros/kilted/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:95 (message):
+  rosidl_generate_interfaces() the passed file 'action/SendScript.action'
+  doesn't exist relative to the CMAKE_CURRENT_SOURCE_DIR
+  '/home/admin/ros_ws/src/eta_robots/Universal_Robots_ROS2_Driver/my_ur_msgs'
+Call Stack (most recent call first):
+  CMakeLists.txt:19 (rosidl_generate_interfaces)
+
+[0m
