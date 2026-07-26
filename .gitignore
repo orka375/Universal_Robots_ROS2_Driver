@@ -13,3 +13,7 @@ docs_build
 cross_reference
 ur_robot_driver/doc/generated
 .lycheecache
+
+/build
+/install
+/log
